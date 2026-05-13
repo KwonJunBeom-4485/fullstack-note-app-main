@@ -18,7 +18,7 @@ export default function HomePage() {
   const [editNote,    setEditNote]    = useState<Note | null>(null)
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
-  // ── 메모 목록 로드 ────────────────────────────────────────
+  // ── 메모 목록 로드 ────────────────────────────────────────111
   const loadNotes = useCallback(async () => {
     try {
       const data = await noteApi.getAll()
